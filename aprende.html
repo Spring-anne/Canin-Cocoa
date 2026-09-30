@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende sobre tu salud · Canin Cocoa</title>
+  <meta name="description" content="Orientación, prevención y educación en salud femenina adaptada a cada etapa de la vida.">
+  <link rel="icon" href="img/logo.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.jpeg" alt="Logo Canin Cocoa">
+        Canin Cocoa
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+        <a href="sintomas.html">Síntomas</a>
+        <a href="aprende.html" class="active">Aprende</a>
+        <a href="perfil.html">Mi Perfil</a>
+      </nav>
+      <a href="perfil.html" class="btn btn-rose nav-cta">Registro</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" style="color:#7C83E8">Contenido educativo</span>
+          <h2 class="section-title">Aprende sobre tu salud</h2>
+        </div>
+
+        <!-- Filtros: data-filter debe coincidir con data-tag de cada artículo -->
+        <div class="chips" id="filters" style="margin-bottom:32px">
+          <button class="chip pill active" data-filter="todos">Todos</button>
+          <button class="chip pill" data-filter="menstruacion">Menstruación</button>
+          <button class="chip pill" data-filter="sexualidad">Sexualidad</button>
+          <button class="chip pill" data-filter="menopausia">Menopausia</button>
+          <button class="chip pill" data-filter="prevencion">Prevención</button>
+          <button class="chip pill" data-filter="corazon">Corazón</button>
+          <button class="chip pill" data-filter="bienestar">Bienestar</button>
+        </div>
+
+        <div class="articles">
+          <article class="article t-prevencion" data-tag="prevencion" id="autoexploracion">
+            <div class="article-body">
+              <span class="tag">Prevención</span>
+              <h4>Autoexploración de mama paso a paso</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                Hazla cada mes, de 7 a 10 días después de que inicie tu menstruación (o el mismo día de cada mes si ya no menstrúas). Frente al espejo, observa forma, piel y pezones; luego, acostada, recorre cada seno y la axila con las yemas de los dedos en círculos. Consulta si notas bultos, hundimientos, secreción o cambios en la piel. A partir de los 40 años, complementa con una mastografía cada 2 años.
+              </details>
+              <div class="article-meta"><span>⏱ 4 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-sexualidad" data-tag="sexualidad" id="vph">
+            <div class="article-body">
+              <span class="tag">Sexualidad</span>
+              <h4>VPH: qué es y por qué vacunarse</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                El virus del papiloma humano es la infección de transmisión sexual más común y la principal causa del cáncer cervicouterino. La vacuna protege mejor si se aplica antes de iniciar la vida sexual; en México es gratuita para niñas y niños de 5.º de primaria o de 11 años. La vacuna no sustituye el Papanicolaou ni la prueba de VPH.
+              </details>
+              <div class="article-meta"><span>⏱ 5 min de lectura</span></div>
+            </div>
+          </article>
+          <article class="article t-menstruacion" data-tag="menstruacion">
+            <div class="article-body">
+              <span class="tag">Menstruación</span>
+              <h4>El ciclo menstrual y tus hormonas</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                Un ciclo suele durar entre 21 y 35 días y tiene cuatro fases: menstrual, folicular, ovulatoria y lútea. Llevar un registro de tus periodos te ayuda a notar cambios y a comentarlos con tu médica.
+              </details>
+              <div class="article-meta"><span>⏱ 5 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-sexualidad" data-tag="sexualidad">
+            <div class="article-body">
+              <span class="tag">Sexualidad</span>
+              <h4>Anticoncepción: opciones y cómo elegir</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                Existen métodos de barrera, hormonales, dispositivos intrauterinos y definitivos. El condón es el único que además protege contra ITS. La elección ideal se hace junto con una profesional según tu salud y tus planes.
+              </details>
+              <div class="article-meta"><span>⏱ 7 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-menopausia" data-tag="menopausia">
+            <div class="article-body">
+              <span class="tag">Menopausia</span>
+              <h4>Señales de alerta en la menopausia</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                La menopausia se confirma tras 12 meses sin menstruación. Cualquier sangrado posterior debe revisarse, igual que los sofocos que interfieren con el sueño o las palpitaciones frecuentes.
+              </details>
+              <div class="article-meta"><span>⏱ 4 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-prevencion" data-tag="prevencion">
+            <div class="article-body">
+              <span class="tag">Prevención</span>
+              <h4>Cómo prevenir la osteoporosis desde joven</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                La masa ósea alcanza su punto máximo alrededor de los 30 años. Calcio, vitamina D, ejercicio con impacto o de fuerza y evitar el tabaco son la base para huesos fuertes más adelante.
+              </details>
+              <div class="article-meta"><span>⏱ 6 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-corazon" data-tag="corazon">
+            <div class="article-body">
+              <span class="tag">Corazón</span>
+              <h4>Salud cardiovascular femenina: lo que debes saber</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                En las mujeres, un infarto puede presentarse con cansancio, náusea, falta de aire o dolor en espalda o mandíbula, no solo dolor de pecho. Ante estos síntomas, acude a urgencias.
+              </details>
+              <div class="article-meta"><span>⏱ 8 min de lectura</span></div>
+            </div>
+          </article>
+
+          <article class="article t-bienestar" data-tag="bienestar">
+            <div class="article-body">
+              <span class="tag">Bienestar</span>
+              <h4>Nutrición y salud hormonal</h4>
+              <details>
+                <summary>Leer resumen →</summary>
+                Una alimentación variada con fibra, proteína, grasas saludables y buena hidratación apoya el equilibrio hormonal. Dormir bien y manejar el estrés también influyen en tu ciclo.
+              </details>
+              <div class="article-meta"><span>⏱ 5 min de lectura</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-box">
+          <div class="big-icon">💬</div>
+          <h3>¿Tienes más preguntas?</h3>
+          <p>Consulta nuestra base de conocimiento o busca una especialista cerca de ti.</p>
+          <a href="#" class="btn btn-rose">Ver directorio de especialistas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/logo.jpeg" alt="">Canin Cocoa</a>
+        <p>Plataforma de orientación y educación en salud femenina. No sustituye la atención médica profesional.</p>
+      </div>
+      <div>
+        <h5>Módulos</h5>
+        <ul>
+          <li><a href="modulos.html#adolescence">Adolescencia</a></li>
+          <li><a href="modulos.html#reproductive">Edad Reproductiva</a></li>
+          <li><a href="modulos.html#menopause">Menopausia</a></li>
+          <li><a href="modulos.html#senior">Adultez Mayor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="sintomas.html">Análisis de Síntomas</a></li>
+          <li><a href="perfil.html">Mi Perfil de Salud</a></li>
+          <li><a href="aprende.html">Contenido Educativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre Nosotras</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Canin Cocoa. Información orientativa, no diagnóstico médico.</span>
+      <span>Hecho con 💜 para todas las mujeres</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

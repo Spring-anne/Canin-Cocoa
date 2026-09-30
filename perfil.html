@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi perfil de salud · Canin Cocoa</title>
+  <meta name="description" content="Orientación, prevención y educación en salud femenina adaptada a cada etapa de la vida.">
+  <link rel="icon" href="img/icono.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.jpeg" alt="Logo Canin Cocoa">
+        Canin Cocoa
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+        <a href="sintomas.html">Síntomas</a>
+        <a href="aprende.html">Aprende</a>
+        <a href="perfil.html" class="active">Mi Perfil</a>
+      </nav>
+      <a href="perfil.html" class="btn btn-rose nav-cta">Registro</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container-sm">
+        <div class="section-head" style="margin-bottom:32px">
+          <span class="eyebrow">Tu perfil de salud</span>
+          <h2 class="section-title">Registro de antecedentes</h2>
+          <p class="section-intro">Esta información nos ayuda a brindarte contenido más relevante para tu situación de salud.</p>
+        </div>
+
+        <!-- Indicador de pasos -->
+        <div class="steps" id="steps">
+          <div class="step done"><div class="dot">1</div><div class="line"></div></div>
+          <div class="step"><div class="dot">2</div><div class="line"></div></div>
+          <div class="step"><div class="dot">3</div></div>
+        </div>
+
+        <div class="card">
+          <form id="profileForm">
+            <!-- Paso 1 -->
+            <div class="form-step active" data-step="1">
+              <h3>Información básica</h3>
+              <div>
+                <label class="field-label" for="name">Nombre</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+              </div>
+              <div>
+                <label class="field-label" for="age">Edad</label>
+                <input class="input" type="number" id="age" name="age" placeholder="Ej. 28" min="10" max="110" required>
+              </div>
+              <div>
+                <label class="field-label" for="menarche">Edad de primera menstruación</label>
+                <input class="input" type="number" id="menarche" name="menarche" placeholder="Ej. 13" min="7" max="20">
+              </div>
+              <div>
+                <span class="field-label">Actividad sexual</span>
+                <div class="chips">
+                  <label class="option"><input type="radio" name="sexual" value="Activa"><span>Activa</span></label>
+                  <label class="option"><input type="radio" name="sexual" value="No activa"><span>No activa</span></label>
+                  <label class="option"><input type="radio" name="sexual" value="Prefiero no decir"><span>Prefiero no decir</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="form-step" data-step="2">
+              <h3>Historial reproductivo y hábitos</h3>
+              <div>
+                <span class="field-label">Número de embarazos</span>
+                <div class="chips">
+                  <label class="option blue"><input type="radio" name="pregnancies" value="0"><span>0</span></label>
+                  <label class="option blue"><input type="radio" name="pregnancies" value="1"><span>1</span></label>
+                  <label class="option blue"><input type="radio" name="pregnancies" value="2"><span>2</span></label>
+                  <label class="option blue"><input type="radio" name="pregnancies" value="3"><span>3</span></label>
+                  <label class="option blue"><input type="radio" name="pregnancies" value="4+"><span>4+</span></label>
+                </div>
+              </div>
+              <div>
+                <span class="field-label">Actividad física semanal</span>
+                <div class="chips">
+                  <label class="option blue"><input type="radio" name="exercise" value="Sedentaria"><span>Sedentaria</span></label>
+                  <label class="option blue"><input type="radio" name="exercise" value="1–2 días"><span>1–2 días</span></label>
+                  <label class="option blue"><input type="radio" name="exercise" value="3–4 días"><span>3–4 días</span></label>
+                  <label class="option blue"><input type="radio" name="exercise" value="5+ días"><span>5+ días</span></label>
+                </div>
+              </div>
+              <div>
+                <span class="field-label">Alimentación predominante</span>
+                <div class="chips">
+                  <label class="option blue"><input type="radio" name="diet" value="Balanceada"><span>Balanceada</span></label>
+                  <label class="option blue"><input type="radio" name="diet" value="Alta en procesados"><span>Alta en procesados</span></label>
+                  <label class="option blue"><input type="radio" name="diet" value="Vegetariana"><span>Vegetariana</span></label>
+                  <label class="option blue"><input type="radio" name="diet" value="Vegana"><span>Vegana</span></label>
+                  <label class="option blue"><input type="radio" name="diet" value="Otra"><span>Otra</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="form-step" data-step="3">
+              <h3>Antecedentes médicos</h3>
+              <div>
+                <label class="field-label" for="history">Enfermedades diagnosticadas</label>
+                <textarea class="input" id="history" name="history" rows="3" placeholder="Ej. diabetes, hipotiroidismo, hipertensión..."></textarea>
+              </div>
+              <div>
+                <label class="field-label" for="family">Antecedentes familiares</label>
+                <textarea class="input" id="family" name="family" rows="3" placeholder="Ej. cáncer de mama, diabetes tipo 2, osteoporosis..."></textarea>
+              </div>
+              <div class="info-box">🔒 Tu información es privada y solo se usa para personalizar tu experiencia. En este prototipo se guarda únicamente en tu navegador.</div>
+            </div>
+
+            <div class="form-actions" id="formActions">
+              <button type="button" class="btn btn-soft" id="prevBtn" style="visibility:hidden">← Anterior</button>
+              <button type="button" class="btn btn-purple" id="nextBtn">Siguiente →</button>
+              <button type="submit" class="btn btn-rose" id="saveBtn" hidden>Guardar perfil ✓</button>
+            </div>
+          </form>
+
+          <!-- Mensaje al guardar -->
+          <div class="success" id="success">
+            <div class="big-icon">🎉</div>
+            <h3>¡Perfil guardado, <span id="successName"></span>!</h3>
+            <p>Este es el resumen de tu perfil. Según tu edad, te recomendamos este módulo:</p>
+            <dl class="summary" id="summary"></dl>
+            <a href="modulos.html" class="btn btn-rose" id="recommendedLink">Ver mi módulo</a>
+            <button type="button" class="btn btn-soft" id="editProfile">Editar perfil</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/logo.jpeg" alt="">Canin Cocoa</a>
+        <p>Plataforma de orientación y educación en salud femenina. No sustituye la atención médica profesional.</p>
+      </div>
+      <div>
+        <h5>Módulos</h5>
+        <ul>
+          <li><a href="modulos.html#adolescence">Adolescencia</a></li>
+          <li><a href="modulos.html#reproductive">Edad Reproductiva</a></li>
+          <li><a href="modulos.html#menopause">Menopausia</a></li>
+          <li><a href="modulos.html#senior">Adultez Mayor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="sintomas.html">Análisis de Síntomas</a></li>
+          <li><a href="perfil.html">Mi Perfil de Salud</a></li>
+          <li><a href="aprende.html">Contenido Educativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre Nosotras</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Canin Cocoa. Información orientativa, no diagnóstico médico.</span>
+      <span>Hecho con 💜 para todas las mujeres</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

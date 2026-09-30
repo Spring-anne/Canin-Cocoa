@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulos por etapa · Canin Cocoa</title>
+  <meta name="description" content="Orientación, prevención y educación en salud femenina adaptada a cada etapa de la vida.">
+  <link rel="icon" href="img/icono.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.jpeg" alt="Logo Canin Cocoa">
+        Canin Cocoa
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html" class="active">Módulos</a>
+        <a href="sintomas.html">Síntomas</a>
+        <a href="aprende.html">Aprende</a>
+        <a href="perfil.html">Mi Perfil</a>
+      </nav>
+      <a href="perfil.html" class="btn btn-rose nav-cta">Registro</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Módulos de información</span>
+          <h2 class="section-title">Información según tu etapa de vida</h2>
+        </div>
+
+        <!-- Pestañas: cada botón muestra el panel con el mismo data-stage -->
+        <div class="tabs" role="tablist">
+          <button class="tab stage-adolescence active" data-stage="adolescence" role="tab">🌸 Adolescencia</button>
+          <button class="tab stage-reproductive" data-stage="reproductive" role="tab">🌺 Edad Reproductiva</button>
+          <button class="tab stage-menopause" data-stage="menopause" role="tab">🦋 Transición y Menopausia</button>
+          <button class="tab stage-senior" data-stage="senior" role="tab">🌼 Adultez Mayor</button>
+        </div>
+
+        <!-- ===== Adolescencia ===== -->
+        <div class="panel stage-adolescence active" id="adolescence" role="tabpanel">
+          <div class="card stage-info">
+            <div class="big-icon">🌸</div>
+            <h3>Adolescencia</h3>
+            <div class="age">10–19 años</div>
+            <p>Etapa de grandes cambios físicos y emocionales. Comprender tu cuerpo es el primer paso hacia una salud integral.</p>
+            <div class="topics">
+              <div class="topic">Pubertad y desarrollo</div>
+              <div class="topic">Primera menstruación</div>
+              <div class="topic">Higiene íntima</div>
+              <div class="topic">Sexualidad y consentimiento</div>
+              <div class="topic">Salud reproductiva</div>
+              <div class="topic">Salud emocional</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="alerts-head"><div class="icon">⚠️</div><h4>Señales de alerta</h4></div>
+            <p class="small-muted">Consulta a una profesional de salud si presentas:</p>
+            <ul class="alert-list">
+              <li>Menstruaciones muy irregulares o ausentes</li>
+              <li>Dolor menstrual incapacitante</li>
+              <li>Flujo inusual con mal olor</li>
+              <li>Cambios de humor extremos</li>
+            </ul>
+            <a href="sintomas.html" class="btn btn-rose btn-block">Revisar mis síntomas →</a>
+          </div>
+        </div>
+
+        <!-- ===== Edad reproductiva ===== -->
+        <div class="panel stage-reproductive" id="reproductive" role="tabpanel">
+          <div class="card stage-info">
+            <div class="big-icon">🌺</div>
+            <h3>Edad Reproductiva</h3>
+            <div class="age">20–39 años</div>
+            <p>Años de mayor actividad reproductiva. El conocimiento de tu ciclo y tu salud sexual es poder.</p>
+            <div class="topics">
+              <div class="topic">Ciclo menstrual</div>
+              <div class="topic">Anticoncepción</div>
+              <div class="topic">Embarazo y planificación</div>
+              <div class="topic">Infecciones de transmisión sexual</div>
+              <div class="topic">Endometriosis y SOP</div>
+              <div class="topic">Salud cervical</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="alerts-head"><div class="icon">⚠️</div><h4>Señales de alerta</h4></div>
+            <p class="small-muted">Consulta a una profesional de salud si presentas:</p>
+            <ul class="alert-list">
+              <li>Sangrado entre periodos</li>
+              <li>Dolor pélvico persistente</li>
+              <li>Secreción inusual</li>
+              <li>Dificultad para concebir después de 12 meses</li>
+            </ul>
+            <a href="sintomas.html" class="btn btn-rose btn-block">Revisar mis síntomas →</a>
+          </div>
+        </div>
+
+        <!-- ===== Menopausia ===== -->
+        <div class="panel stage-menopause" id="menopause" role="tabpanel">
+          <div class="card stage-info">
+            <div class="big-icon">🦋</div>
+            <h3>Transición y Menopausia</h3>
+            <div class="age">40–59 años</div>
+            <p>Una nueva etapa de transformación. Cuidar tu corazón, tus huesos y tu equilibrio hormonal es esencial.</p>
+            <div class="topics">
+              <div class="topic">Cambios hormonales</div>
+              <div class="topic">Perimenopausia</div>
+              <div class="topic">Salud ósea y osteoporosis</div>
+              <div class="topic">Tiroides</div>
+              <div class="topic">Prevención cardiovascular</div>
+              <div class="topic">Bienestar emocional</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="alerts-head"><div class="icon">⚠️</div><h4>Señales de alerta</h4></div>
+            <p class="small-muted">Consulta a una profesional de salud si presentas:</p>
+            <ul class="alert-list">
+              <li>Sangrado después de la menopausia</li>
+              <li>Sofocos severos que afectan tu vida diaria</li>
+              <li>Palpitaciones frecuentes</li>
+              <li>Dolor en el pecho</li>
+            </ul>
+            <a href="sintomas.html" class="btn btn-rose btn-block">Revisar mis síntomas →</a>
+          </div>
+        </div>
+
+        <!-- ===== Adultez mayor ===== -->
+        <div class="panel stage-senior" id="senior" role="tabpanel">
+          <div class="card stage-info">
+            <div class="big-icon">🌼</div>
+            <h3>Adultez Mayor</h3>
+            <div class="age">60+ años</div>
+            <p>La experiencia y la sabiduría van de la mano con la salud. Prevenir es vivir mejor.</p>
+            <div class="topics">
+              <div class="topic">Osteoporosis</div>
+              <div class="topic">Salud cardiovascular</div>
+              <div class="topic">Diabetes tipo 2</div>
+              <div class="topic">Función tiroidea</div>
+              <div class="topic">Salud cognitiva</div>
+              <div class="topic">Prevención de caídas</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="alerts-head"><div class="icon">⚠️</div><h4>Señales de alerta</h4></div>
+            <p class="small-muted">Consulta a una profesional de salud si presentas:</p>
+            <ul class="alert-list">
+              <li>Dolor torácico o dificultad para respirar</li>
+              <li>Confusión repentina</li>
+              <li>Caídas frecuentes</li>
+              <li>Pérdida de peso sin causa aparente</li>
+            </ul>
+            <a href="sintomas.html" class="btn btn-rose btn-block">Revisar mis síntomas →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/logo.jpeg" alt="">Canin Cocoa</a>
+        <p>Plataforma de orientación y educación en salud femenina. No sustituye la atención médica profesional.</p>
+      </div>
+      <div>
+        <h5>Módulos</h5>
+        <ul>
+          <li><a href="modulos.html#adolescence">Adolescencia</a></li>
+          <li><a href="modulos.html#reproductive">Edad Reproductiva</a></li>
+          <li><a href="modulos.html#menopause">Menopausia</a></li>
+          <li><a href="modulos.html#senior">Adultez Mayor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="sintomas.html">Análisis de Síntomas</a></li>
+          <li><a href="perfil.html">Mi Perfil de Salud</a></li>
+          <li><a href="aprende.html">Contenido Educativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre Nosotras</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Canin Cocoa. Información orientativa, no diagnóstico médico.</span>
+      <span>Hecho con 💜 para todas las mujeres</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

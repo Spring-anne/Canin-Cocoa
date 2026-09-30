@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de síntomas · Canin Cocoa</title>
+  <meta name="description" content="Orientación, prevención y educación en salud femenina adaptada a cada etapa de la vida.">
+  <link rel="icon" href="img/icono.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.jpeg" alt="Logo Canin Cocoa">
+        Canin Cocoa
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+        <a href="sintomas.html" class="active">Síntomas</a>
+        <a href="aprende.html">Aprende</a>
+        <a href="perfil.html">Mi Perfil</a>
+      </nav>
+      <a href="perfil.html" class="btn btn-rose nav-cta">Registro</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+    <section class="section band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" style="color:var(--purple)">Herramienta orientativa</span>
+          <h2 class="section-title">Análisis preliminar de síntomas</h2>
+          <p class="section-intro">Esta herramienta es orientativa y no sustituye un diagnóstico médico. Selecciona tus síntomas para recibir información personalizada.</p>
+        </div>
+
+        <div class="symptoms-grid">
+          <form id="symptomForm">
+            <div class="field">
+              <span class="field-label">Tu edad aproximada</span>
+              <div class="chips">
+                <label class="option blue"><input type="radio" name="age" value="10–19"><span>10–19</span></label>
+                <label class="option blue"><input type="radio" name="age" value="20–29"><span>20–29</span></label>
+                <label class="option blue"><input type="radio" name="age" value="30–39"><span>30–39</span></label>
+                <label class="option blue"><input type="radio" name="age" value="40–49"><span>40–49</span></label>
+                <label class="option blue"><input type="radio" name="age" value="50–59"><span>50–59</span></label>
+                <label class="option blue"><input type="radio" name="age" value="60+"><span>60+</span></label>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="field-label">Síntomas que presentas</span>
+              <!-- data-category se usa en js/main.js para calcular el nivel -->
+              <div class="symptom-list">
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="reproductive"><span>Dolor pélvico o abdominal</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="reproductive"><span>Sangrado irregular o abundante</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="general"><span>Fatiga extrema</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="hormonal"><span>Cambios de humor frecuentes</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="hormonal"><span>Sofocos o sudoraciones nocturnas</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="bone"><span>Dolor en articulaciones o huesos</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="cardiac"><span>Palpitaciones o dolor en el pecho</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="reproductive"><span>Flujo vaginal inusual</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="thyroid"><span>Pérdida o aumento de peso sin causa</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="reproductive"><span>Sensibilidad en los senos</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="general"><span>Dificultad para dormir</span></label>
+                <label class="symptom"><input type="checkbox" name="symptom" data-category="general"><span>Dolor de cabeza frecuente</span></label>
+              </div>
+            </div>
+
+            <!-- Detalles: duración, intensidad e impacto (se usan en js/main.js, sección 3) -->
+            <div class="details-box">
+              <p class="details-title">Cuéntanos un poco más</p>
+              <p class="details-intro">Estos datos ayudan a que la orientación sea más precisa.</p>
+
+              <div class="field">
+                <span class="field-label">¿Desde cuándo tienes estos síntomas? <em class="req">*</em></span>
+                <div class="chips">
+                  <label class="option"><input type="radio" name="duracion" value="dias"><span>Menos de 1 semana</span></label>
+                  <label class="option"><input type="radio" name="duracion" value="1-2sem"><span>1 a 2 semanas</span></label>
+                  <label class="option"><input type="radio" name="duracion" value="2-4sem"><span>2 a 4 semanas</span></label>
+                  <label class="option"><input type="radio" name="duracion" value="1-3meses"><span>1 a 3 meses</span></label>
+                  <label class="option"><input type="radio" name="duracion" value="3meses+"><span>Más de 3 meses</span></label>
+                </div>
+              </div>
+
+              <div class="field">
+                <span class="field-label">¿Qué tan fuertes son las molestias?</span>
+                <div class="chips">
+                  <label class="option"><input type="radio" name="intensidad" value="leve"><span>Leves <small>(1–3 de 10)</small></span></label>
+                  <label class="option"><input type="radio" name="intensidad" value="moderada"><span>Moderadas <small>(4–6 de 10)</small></span></label>
+                  <label class="option"><input type="radio" name="intensidad" value="fuerte"><span>Fuertes <small>(7–10 de 10)</small></span></label>
+                </div>
+              </div>
+
+              <div class="field">
+                <span class="field-label">¿Cómo han cambiado?</span>
+                <div class="chips">
+                  <label class="option"><input type="radio" name="evolucion" value="mejorando"><span>Van mejorando</span></label>
+                  <label class="option"><input type="radio" name="evolucion" value="igual"><span>Siguen igual</span></label>
+                  <label class="option"><input type="radio" name="evolucion" value="empeorando"><span>Van empeorando</span></label>
+                  <label class="option"><input type="radio" name="evolucion" value="van-y-vienen"><span>Van y vienen</span></label>
+                </div>
+              </div>
+
+              <div class="field" style="margin-bottom:0">
+                <span class="field-label">¿Te impiden hacer tus actividades diarias?</span>
+                <div class="chips">
+                  <label class="option"><input type="radio" name="impacto" value="no"><span>No</span></label>
+                  <label class="option"><input type="radio" name="impacto" value="aveces"><span>A veces</span></label>
+                  <label class="option"><input type="radio" name="impacto" value="si"><span>Sí, con frecuencia</span></label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-purple">Obtener orientación</button>
+            <button type="reset" class="btn btn-soft" id="resetSymptoms">Limpiar</button>
+          </form>
+
+          <!-- Aquí js/main.js escribe el resultado -->
+          <div class="result" id="result" aria-live="polite">
+            <div class="big-icon">🩺</div>
+            <p style="font-weight:700; color:var(--dark); margin-bottom:4px">Selecciona tus síntomas</p>
+            <p style="font-size:12px; margin:0">Recibirás orientación personalizada basada en tus respuestas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/logo.jpeg" alt="">Canin Cocoa</a>
+        <p>Plataforma de orientación y educación en salud femenina. No sustituye la atención médica profesional.</p>
+      </div>
+      <div>
+        <h5>Módulos</h5>
+        <ul>
+          <li><a href="modulos.html#adolescence">Adolescencia</a></li>
+          <li><a href="modulos.html#reproductive">Edad Reproductiva</a></li>
+          <li><a href="modulos.html#menopause">Menopausia</a></li>
+          <li><a href="modulos.html#senior">Adultez Mayor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="sintomas.html">Análisis de Síntomas</a></li>
+          <li><a href="perfil.html">Mi Perfil de Salud</a></li>
+          <li><a href="aprende.html">Contenido Educativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre Nosotras</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Canin Cocoa. Información orientativa, no diagnóstico médico.</span>
+      <span>Hecho con 💜 para todas las mujeres</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

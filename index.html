@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canin Cocoa · Salud femenina en cada etapa</title>
+  <meta name="description" content="Orientación, prevención y educación en salud femenina adaptada a cada etapa de la vida.">
+  <link rel="icon" href="img/logo.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/icono.jpeg" alt="Logo Canin Cocoa">
+        Canin Cocoa
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+        <a href="sintomas.html">Síntomas</a>
+        <a href="aprende.html">Aprende</a>
+        <a href="perfil.html">Mi Perfil</a>
+      </nav>
+      <a href="perfil.html" class="btn btn-rose nav-cta">Registro</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+
+        <!-- ===== Carrusel de banners: fechas y campañas de salud =====
+             Para agregar un banner, copia un <article class="slide"> completo.
+             Los puntos de navegación se generan solos en js/main.js. -->
+        <div class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Fechas y campañas de salud">
+          <div class="carousel-track">
+
+            <article class="slide slide-rose" aria-roledescription="diapositiva">
+              <div class="slide-text">
+                <span class="slide-date">📅 Octubre · 19 de octubre</span>
+                <h2>Octubre Rosa: mes de lucha contra el cáncer de mama</h2>
+                <p>La detección temprana salva vidas. Explora tus senos cada mes y, de los 40 a los 69 años, hazte una mastografía cada 2 años.</p>
+                <a href="aprende.html#autoexploracion" class="btn btn-white">Aprende a autoexplorarte</a>
+              </div>
+              <div class="slide-art" aria-hidden="true">
+                <!-- Listón rosa -->
+                <svg viewBox="0 0 100 140"><path d="M20 132 L62 46 C76 18 64 6 50 6 C36 6 24 18 38 46 L80 132" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </article>
+
+            <article class="slide slide-lilac" aria-roledescription="diapositiva">
+              <div class="slide-text">
+                <span class="slide-date">💉 Campaña de vacunación</span>
+                <h2>Vacuna contra el VPH: prevenir el cáncer cervicouterino</h2>
+                <p>Es gratuita en centros de salud y escuelas para niñas y niños de 5.º de primaria o de 11 años. Pregunta en tu unidad de salud.</p>
+                <a href="aprende.html#vph" class="btn btn-white">Conoce más sobre el VPH</a>
+              </div>
+              <div class="slide-art" aria-hidden="true">🛡️</div>
+            </article>
+
+            <article class="slide slide-periwinkle" aria-roledescription="diapositiva">
+              <div class="slide-text">
+                <span class="slide-date">📅 18 de octubre</span>
+                <h2>Día Mundial de la Menopausia</h2>
+                <p>Sofocos, cambios de sueño y de ánimo son comunes, pero no tienes que vivirlos en silencio. Hay opciones para sentirte mejor.</p>
+                <a href="modulos.html#menopause" class="btn btn-white">Ver módulo de menopausia</a>
+              </div>
+              <div class="slide-art" aria-hidden="true">🦋</div>
+            </article>
+
+            <article class="slide slide-ice" aria-roledescription="diapositiva">
+              <div class="slide-text">
+                <span class="slide-date">📅 20 de octubre</span>
+                <h2>Día Mundial de la Osteoporosis</h2>
+                <p>Después de la menopausia la pérdida de hueso se acelera. Calcio, vitamina D y ejercicio de fuerza ayudan a prevenir fracturas.</p>
+                <a href="modulos.html#senior" class="btn btn-white">Cuida tus huesos</a>
+              </div>
+              <div class="slide-art" aria-hidden="true">🦴</div>
+            </article>
+
+            <article class="slide slide-purple" aria-roledescription="diapositiva">
+              <div class="slide-text">
+                <span class="slide-date">📅 14 de noviembre</span>
+                <h2>Día Mundial de la Diabetes</h2>
+                <p>Revisa tu glucosa si tienes antecedentes familiares, sobrepeso o tuviste diabetes gestacional. Detectarla a tiempo cambia todo.</p>
+                <a href="sintomas.html" class="btn btn-white">Revisar mis síntomas</a>
+              </div>
+              <div class="slide-art" aria-hidden="true">🩸</div>
+            </article>
+
+          </div>
+
+          <button class="carousel-btn prev" aria-label="Banner anterior">‹</button>
+          <button class="carousel-btn next" aria-label="Banner siguiente">›</button>
+          <div class="carousel-dots" role="tablist" aria-label="Elegir banner"></div>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <span class="badge">Tu salud, tu poder</span>
+            <h1>Cuida tu salud<br><span>femenina</span> con<br>información confiable</h1>
+            <p>Orientación, prevención y educación adaptada a cada etapa de tu vida. Comprende tus síntomas y sabe cuándo acudir con una profesional.</p>
+            <div class="hero-actions">
+              <a href="sintomas.html" class="btn btn-rose">Analizar mis síntomas</a>
+              <a href="modulos.html" class="btn btn-outline">Ver módulos</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop&auto=format" alt="Profesional de salud en consulta">
+            </div>
+          </div>
+        </div>
+
+        <!-- Acceso rápido a cada etapa -->
+        <div class="stage-cards">
+          <a href="modulos.html#adolescence" class="stage-card stage-adolescence">
+            <span class="icon">🌸</span>
+            <div><strong>Adolescencia</strong><small>10–19 años</small></div>
+          </a>
+          <a href="modulos.html#reproductive" class="stage-card stage-reproductive">
+            <span class="icon">🌺</span>
+            <div><strong>Edad Reproductiva</strong><small>20–39 años</small></div>
+          </a>
+          <a href="modulos.html#menopause" class="stage-card stage-menopause">
+            <span class="icon">🦋</span>
+            <div><strong>Transición y Menopausia</strong><small>40–59 años</small></div>
+          </a>
+          <a href="modulos.html#senior" class="stage-card stage-senior">
+            <span class="icon">🌼</span>
+            <div><strong>Adultez Mayor</strong><small>60+ años</small></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Qué puedes hacer ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">¿Cómo te ayudamos?</span>
+          <h2 class="section-title">Todo lo que necesitas en un solo lugar</h2>
+        </div>
+        <div class="features">
+          <a href="modulos.html" class="feature">
+            <div class="icon" style="background:#FFF0F7">📚</div>
+            <h3>Módulos por etapa</h3>
+            <p>Información clara sobre los cambios y cuidados de cada etapa de tu vida, con señales de alerta a tener en cuenta.</p>
+            <span class="link">Explorar módulos →</span>
+          </a>
+          <a href="sintomas.html" class="feature">
+            <div class="icon" style="background:#FAF0FF">🩺</div>
+            <h3>Análisis de síntomas</h3>
+            <p>Una herramienta orientativa que te ayuda a saber si es momento de acudir con una profesional de salud.</p>
+            <span class="link">Revisar síntomas →</span>
+          </a>
+          <a href="aprende.html" class="feature">
+            <div class="icon" style="background:#EEF6FF">💡</div>
+            <h3>Contenido educativo</h3>
+            <p>Artículos breves sobre menstruación, anticoncepción, menopausia, salud ósea, corazón y bienestar.</p>
+            <span class="link">Empezar a aprender →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Llamado a registro ===== -->
+    <section class="section band">
+      <div class="container">
+        <div class="cta-box" style="margin-top:0; background:#fff">
+          <div class="big-icon">💜</div>
+          <h3>Crea tu perfil de salud</h3>
+          <p>Registra tus antecedentes para recibir contenido más relevante para ti.</p>
+          <a href="perfil.html" class="btn btn-rose">Comenzar registro</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="img/icono.jpeg" alt="">Canin Cocoa</a>
+        <p>Plataforma de orientación y educación en salud femenina. No sustituye la atención médica profesional.</p>
+      </div>
+      <div>
+        <h5>Módulos</h5>
+        <ul>
+          <li><a href="modulos.html#adolescence">Adolescencia</a></li>
+          <li><a href="modulos.html#reproductive">Edad Reproductiva</a></li>
+          <li><a href="modulos.html#menopause">Menopausia</a></li>
+          <li><a href="modulos.html#senior">Adultez Mayor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="sintomas.html">Análisis de Síntomas</a></li>
+          <li><a href="perfil.html">Mi Perfil de Salud</a></li>
+          <li><a href="aprende.html">Contenido Educativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre Nosotras</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Canin Cocoa. Información orientativa, no diagnóstico médico.</span>
+      <span>Hecho con 💜 para todas las mujeres</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
